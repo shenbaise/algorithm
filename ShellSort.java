@@ -19,8 +19,7 @@ public class ShellSort {
         //第一层循环是对排序轮次进行循环。(step + 1) / 2 - 1 为下一轮步长值   
         for (; step >= 1; step = (step + 1) / 2 - 1) {   
             //对每轮里的每个分组进行循环   
-            for (int groupIndex = 0; groupIndex < step; groupIndex++) {   
-  
+            for (int groupIndex = 0; groupIndex < step; groupIndex++) { 
                 //对每组进行直接插入排序   
                 insertSort(array, groupIndex, step, end);   
             }   
